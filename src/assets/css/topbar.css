@@ -1,0 +1,11 @@
+.btn-vr {
+    border: 2px dashed rgba(245,255,0,1) !important;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.topbar {
+    opacity: 0.8;
+}

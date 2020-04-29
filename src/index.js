@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import Core from './Core';
 import * as serviceWorker from './serviceWorker';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './assets/css/index.css';
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fas)
+library.add(fab)
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <>
+    <Core />
+  </>,
   document.getElementById('root')
 );
 

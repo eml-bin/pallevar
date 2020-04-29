@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;600&display=swap');
+
+html, body {
+  font-family: 'Baloo Paaji 2', cursive;
+  background-image: url('../img/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #d6c809;
+  box-shadow: inset 0 0 5rem rgba(90, 90, 90, .5);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  color: #fff;
 }
+
+.masterhead {
+  height: 90vh;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+.text-master {
+  color: #EDFF00;
+}
+
+
+.box15 {
+  top: 40px;
+  border: 2px solid #EDFF00;
+  transform: rotate(-5deg);
+}
+
+.construction {
+  font-size: 0.8rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .construction {
+    font-size: 0.8rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .construction {
+    font-size: 1.5rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .construction {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 992px) { 
+  .construction {
+    font-size: 2.8rem;
+  }
+}
+
