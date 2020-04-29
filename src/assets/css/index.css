@@ -36,7 +36,7 @@ body {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .construction {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 

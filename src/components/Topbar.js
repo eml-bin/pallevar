@@ -12,8 +12,7 @@ const Topbar = () => {
 
     return (
         <Navbar 
-            bg="white" 
-            variant="light" 
+            bg="transparent"
             expand="lg"
             fixed="top"
             className="topbar"
@@ -21,8 +20,8 @@ const Topbar = () => {
             <Navbar.Brand href="#home">
                 <img
                     src={logo}
-                    width="60"
-                    height="30"
+                    width="80"
+                    height="40"
                     className="d-inline-block align-top"
                     alt="VR Logo"
                 />
