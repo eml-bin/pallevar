@@ -1,38 +1,36 @@
 const dev = {
-    STRIPE_KEY: "YOUR_STRIPE_DEV_PUBLIC_KEY",
-    apiGateway: {
-      REGION: "YOUR_DEV_API_GATEWAY_REGION",
-      URL: "YOUR_DEV_API_GATEWAY_URL"
-    },
-    cognito: {
-      REGION: "YOUR_DEV_COGNITO_REGION",
-      USER_POOL_ID: "YOUR_DEV_COGNITO_USER_POOL_ID",
-      APP_CLIENT_ID: "YOUR_DEV_COGNITO_APP_CLIENT_ID",
-      IDENTITY_POOL_ID: "YOUR_DEV_IDENTITY_POOL_ID"
-    }
-  };
+  cognito: {
+    REGION: "us-east-1",
+    USER_POOL_ID: "us-east-1_qexhFjPO4",
+    APP_CLIENT_ID: "6hskl73acvb818ujdqu21s39d9",
+    IDENTITY_POOL_ID: "us-east-1:0bdbbfd4-b7c2-40f2-aedb-cbdab87456eb"
+  },
+  s3: {
+    REGION: "us-east-1",
+    BUCKET: "vrparallevar-uploads"
+  },
+};
+
+const prod = {
+  cognito: {
+    REGION: "us-east-1",
+    USER_POOL_ID: "us-east-1_qexhFjPO4",
+    APP_CLIENT_ID: "6hskl73acvb818ujdqu21s39d9",
+    IDENTITY_POOL_ID: "us-east-1:0bdbbfd4-b7c2-40f2-aedb-cbdab87456eb"
+  },
+  s3: {
+    REGION: "us-east-1",
+    BUCKET: "vrparallevar-uploads"
+  },
+};
   
-  const prod = {
-    STRIPE_KEY: "YOUR_STRIPE_PROD_PUBLIC_KEY",
-    apiGateway: {
-      REGION: "YOUR_PROD_API_GATEWAY_REGION",
-      URL: "YOUR_PROD_API_GATEWAY_URL"
-    },
-    cognito: {
-      REGION: "YOUR_PROD_COGNITO_REGION",
-      USER_POOL_ID: "YOUR_PROD_COGNITO_USER_POOL_ID",
-      APP_CLIENT_ID: "YOUR_PROD_COGNITO_APP_CLIENT_ID",
-      IDENTITY_POOL_ID: "YOUR_PROD_IDENTITY_POOL_ID"
-    }
-  };
-  
-  // Default to dev if not set
-  const config = process.env.REACT_APP_STAGE === 'prod'
-    ? prod
-    : dev;
-  
-  export default {
-    // Add common config values here
-    MAX_ATTACHMENT_SIZE: 5000000,
-    ...config
-  };
+// Default to dev if not set
+const config = process.env.REACT_APP_STAGE === 'prod'
+  ? prod
+  : dev;
+
+export default {
+  // Add common config values here
+  MAX_ATTACHMENT_SIZE: 5000000,
+  ...config
+};

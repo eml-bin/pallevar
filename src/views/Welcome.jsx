@@ -1,32 +1,37 @@
 import React from 'react';
 
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Link } from "react-router-dom";
+
+import { useAppContext } from '../libs/context'; 
 
 const Welcome = () => {
+
+    const { isAuthenticated } = useAppContext();
+
     return (
-        <Container
-            className="h-100"
+      <Container className="h-100 animated fadeIn">
+        <Row 
+            className="h-100 align-items-center justify-content-center "
         >
-            <Row className="h-100 align-items-center justify-content-center">
-                <Col
-                    xs="auto"
-                    md={6}
-                    className="text-center text-master box15"
+            <Col
+                xs="auto"
+                md={6}
+                className="text-center text-master box15"
+            >
+                <h1
+                    className="construction pt-2 px-2"
                 >
-                    <h1
-                        className="py-3 construction"
-                    >
-                        ESTAMOS TRABAJANDO EN NUESTRA PÁGINA.
-                        <br/>
-                        ESTAMOS TRABAJANDO EN NUESTRA PÁGINA.
-                        <br/>
-                        ESTAMOS TRABAJANDO EN NUESTRA PÁGINA.
-                    </h1   
-                     
-                       >
-                </Col>
-            </Row>
-        </Container>
+                    EXPLORA EL FESTIVAL
+                </h1>
+                <a href="https://platform.vrparallevar.com/" target="new">
+                    <Button variant="vr" className="mb-3">
+                        Ir al Festival
+                    </Button>
+                </a>
+            </Col>
+        </Row>
+      </Container>
     )
 }
 

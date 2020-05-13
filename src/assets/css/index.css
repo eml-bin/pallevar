@@ -24,39 +24,56 @@ body {
 
 
 .box15 {
-  top: 40px;
   border: 2px solid #EDFF00;
   transform: rotate(-5deg);
+}
+
+.box {
+  border: 2px solid #EDFF00;
+  background-color: rgba(0, 0, 0, .8);
 }
 
 .construction {
   font-size: 0.8rem;
 }
 
+.btn-vr {
+  color: #212529;
+  background-color: #EDFF00;
+  border: 1.5px dashed #050505 !important;
+}
+
+.btn-vr:hover {
+  color: #212529;
+  background-color: #d1ce0d;
+  border: 2px dotted #EDFF00 !important;
+}
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .construction {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   .construction {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .construction {
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
 }
 
 @media only screen and (min-width: 992px) { 
   .construction {
-    font-size: 2.8rem;
+    font-size: 4.5rem;
   }
 }
 

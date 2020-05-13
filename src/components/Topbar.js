@@ -1,9 +1,9 @@
 import React from 'react';
 import { 
     Navbar, 
-    Nav,
-    Container, 
+    // Nav, 
     Button } from 'react-bootstrap';
+import { LinkContainer } from "react-router-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../assets/img/logo.png'
 import '../assets/css/topbar.css';
@@ -17,19 +17,21 @@ const Topbar = () => {
             fixed="top"
             className="topbar"
         >
-            <Navbar.Brand href="#home">
-                <img
-                    src={logo}
-                    width="80"
-                    height="40"
-                    className="d-inline-block align-top"
-                    alt="VR Logo"
-                />
-            </Navbar.Brand>
+            <LinkContainer to="/">
+                <Navbar.Brand>
+                    <img
+                        src={logo}
+                        width="80"
+                        height="40"
+                        className="d-inline-block align-top"
+                        alt="VR Logo"
+                    />
+                </Navbar.Brand>
+            </LinkContainer>
             <Button 
-                className="ml-auto mr-2 btn-vr  text-white"
+                className="ml-auto mr-2"
                 size="sm"
-                variant="warning "
+                variant="vr"
             >
                 QUIERO MI 
                 <FontAwesomeIcon icon={['fas', 'vr-cardboard']}
