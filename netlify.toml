@@ -6,25 +6,25 @@
 [build]
   base    = ""
   publish = "build"
-  command = "REACT_APP_STAGE=dev yarn build"
+  command = "yarn build"
 
 # Production context: All deploys to the main
 # repository branch will inherit these settings.
 
 [context.production]
-  command = "REACT_APP_STAGE=prod yarn build"
+  command = "yarn build"
 
 # Deploy Preview context: All Deploy Previews
 # will inherit these settings.
 
 [context.deploy-preview]
-  command = "REACT_APP_STAGE=dev yarn build"
+  command = "yarn build"
 
 # Branch Deploy context: All deploys that are not in
 # an active Deploy Preview will inherit these settings.
 
 [context.branch-deploy]
-  command = "REACT_APP_STAGE=dev yarn build"
+  command = "yarn build"
 
 [[redirects]]
   from   = "/*"

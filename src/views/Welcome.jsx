@@ -1,13 +1,8 @@
 import React from 'react';
 
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import { Link } from "react-router-dom";
-
-import { useAppContext } from '../libs/context'; 
 
 const Welcome = () => {
-
-    const { isAuthenticated } = useAppContext();
 
     return (
       <Container className="h-100 animated fadeIn">

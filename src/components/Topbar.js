@@ -1,7 +1,6 @@
 import React from 'react';
 import { 
-    Navbar, 
-    // Nav, 
+    Navbar,
     Button } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -40,15 +39,6 @@ const Topbar = () => {
                 />
             </Button>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            {/* <Navbar.Collapse id="basic-navbar-nav" className="flex-grow-0">
-                <Nav className="ml-auto">
-                    <Nav.Link 
-                        href="#home"
-                    >
-                        Inicio
-                    </Nav.Link>
-                </Nav>
-            </Navbar.Collapse> */}
         </Navbar>
     )
 }
