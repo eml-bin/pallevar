@@ -27,17 +27,19 @@ const Topbar = () => {
                     />
                 </Navbar.Brand>
             </LinkContainer>
-            <Button 
-                className="ml-auto mr-2"
-                size="sm"
-                variant="vr"
-            >
-                QUIERO MI 
-                <FontAwesomeIcon icon={['fas', 'vr-cardboard']}
-                    size="lg" 
-                    className="ml-2"
-                />
-            </Button>
+            <a href="https://vr-para-llevar.myshopify.com/" target="new">
+                <Button 
+                    className="ml-auto mr-2"
+                    size="sm"
+                    variant="vr"
+                    >
+                    QUIERO MI 
+                    <FontAwesomeIcon icon={['fas', 'vr-cardboard']}
+                        size="lg" 
+                        className="ml-2"
+                        />
+                </Button>
+            </a>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
         </Navbar>
     )
