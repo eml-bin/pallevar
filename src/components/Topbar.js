@@ -1,5 +1,6 @@
 import React from 'react';
 import { 
+    Nav,
     Navbar,
     Button } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
@@ -12,7 +13,7 @@ const Topbar = () => {
     return (
         <Navbar 
             bg="transparent"
-            expand="lg"
+            expand="*"
             fixed="top"
             className="topbar"
         >
@@ -27,9 +28,9 @@ const Topbar = () => {
                     />
                 </Navbar.Brand>
             </LinkContainer>
-            <a href="https://vr-para-llevar.myshopify.com/" target="new">
+            <a className="ml-auto" href="https://vr-para-llevar.myshopify.com/" target="new">
                 <Button 
-                    className="ml-auto mr-2"
+                    className="mr-2"
                     size="sm"
                     variant="vr"
                     >
@@ -41,6 +42,13 @@ const Topbar = () => {
                 </Button>
             </a>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav>
+                    <Nav.Link href="#home">Home</Nav.Link>
+                    <Nav.Link href="#link">Link</Nav.Link>
+
+                </Nav>
+            </Navbar.Collapse>
         </Navbar>
     )
 }
