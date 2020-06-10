@@ -5,8 +5,10 @@ html, body {
   background-image: url('../img/bg.png');
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   background-color: #d6c809;
-  box-shadow: inset 0 0 5rem rgba(90, 90, 90, .5);
+  box-shadow: inset 0 0 5rem rgba(245, 241, 241, 0.5);
 }
 
 body {
