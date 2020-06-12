@@ -8,14 +8,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../assets/img/logo.png'
 import '../assets/css/topbar.css';
 
-const Topbar = () => {
+const Topbar = ({ showUs, }) => {
 
     return (
         <Navbar 
             bg="transparent"
             expand="*"
+            variant="dark"
             fixed="top"
-            className="topbar"
+            className="topbar text-white"
         >
             <LinkContainer to="/">
                 <Navbar.Brand>
@@ -43,10 +44,19 @@ const Topbar = () => {
             </a>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav>
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#link">Link</Nav.Link>
-
+                <Nav className="ml-auto text-right" style={{ width: '20%' }}>
+                    <a href="/" className="text-master py-2" onClick={void(0)}>
+                        Programa
+                    </a>
+                    <a href="/" className="text-master py-2" onClick={void(0)}>
+                        Nosotros
+                    </a>
+                    <a href="/" className="text-master py-2" onClick={void(0)}>
+                        Misión
+                    </a>
+                    <a href="/" className="text-master py-2" onClick={void(0)}>
+                        Contacto
+                    </a>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
