@@ -6,9 +6,10 @@ import {
 import { LinkContainer } from "react-router-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../assets/img/logo.png'
+import program from '../assets/docs/programa.png'
 import '../assets/css/topbar.css';
 
-const Topbar = ({ showUs, }) => {
+const Topbar = ({ showUs, showMission }) => {
 
     return (
         <Navbar 
@@ -45,16 +46,23 @@ const Topbar = ({ showUs, }) => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto text-right" style={{ width: '20%' }}>
-                    <a href="/" className="text-master py-2" onClick={void(0)}>
+                    <a 
+                        href="/" 
+                        className="text-master py-2" 
+                        onClick={() => window.open(program, "_blank")}
+                    >
                         Programa
                     </a>
-                    <a href="/" className="text-master py-2" onClick={void(0)}>
+                    <a href="#" className="text-master py-2" onClick={showUs}>
                         Nosotros
                     </a>
-                    <a href="/" className="text-master py-2" onClick={void(0)}>
+                    <a href="#" className="text-master py-2" onClick={showMission}>
                         Misión
                     </a>
-                    <a href="/" className="text-master py-2" onClick={void(0)}>
+                    <a 
+                        href="mailto:carla@vrparallevar.com?subject=Contacto&body=Hola" 
+                        className="text-master py-2" 
+                    >
                         Contacto
                     </a>
                 </Nav>
