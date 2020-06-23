@@ -53,10 +53,10 @@ const Topbar = ({ showUs, showMission }) => {
                     >
                         Programa
                     </a>
-                    <a href="#" className="text-master py-2" onClick={showUs}>
+                    <a href="/#" className="text-master py-2" onClick={showUs}>
                         Nosotros
                     </a>
-                    <a href="#" className="text-master py-2" onClick={showMission}>
+                    <a href="/#" className="text-master py-2" onClick={showMission}>
                         Misión
                     </a>
                     <a 
