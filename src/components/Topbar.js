@@ -7,6 +7,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../assets/img/logo.png'
 import program from '../assets/docs/programa.png'
+import instructions from '../assets/docs/instrucciones.png'
 import '../assets/css/topbar.css';
 
 const Topbar = ({ showUs, showMission }) => {
@@ -46,6 +47,13 @@ const Topbar = ({ showUs, showMission }) => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto text-right" style={{ width: '20%' }}>
+                    <a 
+                        href="/" 
+                        className="text-master py-2" 
+                        onClick={() => window.open(instructions, "_blank")}
+                    >
+                        Instrucciones
+                    </a>
                     <a 
                         href="/" 
                         className="text-master py-2" 
